@@ -2,35 +2,85 @@ Please answer the below core-java Questions:
 
 What is programing language?
 A.
+A programming language is a computer language that is used by programmers to communicate with computers.It is
+also a set of instruction written for computer to follow in a specific languages such as(Java,Python,C#,C++
+...ect)
 
 
 
 
 What jdk contains or composed of and define each components?
 A.
-
+First,java development kit(JDK) is a software development environment used for developing java applications.
+components of JDK are:
+-Java Runtime Environment(JRE): primarly is a part of jdk,it is a software platform where all the Java Source
+codes are executed
+-Interpreter(JAVA): It acts as a deployment luncher where it load a class file and interprets the source code
+compiled by javac compiler.
+-compiler(JAVAC): The javac is used to convert source code into bytcode
+-Archiver(JAR): The jars helps archives to manage the jar files in the package library.
+-documentation generator(JAVADOC): The javadoc generate documentation for the comments added in the source code.
+ Note:there are more JDK components but those i mentioned are the most comment once.
 
 
 
 
 What is IDE?
 A.
+IDE stand for Integrated Development environment it is basically a software used as integrated platform by devlopers
+to edit,debuge, compile and run the codes.
+developers uses a textEditore such as notpad or notpad++ to write the codes then there is a compiler that checks the
+codes and convert them, then it comes the console output where all logs and errors printed.IDE bassically convert all
+ these three to one software.
 
 
 
 What are the IDEs available in the market to support java?
 A.
-
-
+-Visual Studio
+-Intellij IDEA
+-Eclipse
+-Jetbrains Fleet
+-Xcode
+-NetBeans
+-Atom and so much more IDEs.
 
 Explain the entire java life cycle.
 what is class?
+A.
+A class in java is a blueprint from which objects are created.Also,a class is a container full of variables
+and methods(properties and behaviours).
+
 What is object?
+A.
+An object is an instance of java class which has properties and behaviours attached.The object is a real world
+entity.
+
+
 What is the entry point of an application?
+A.
+The entry point of an application identifies a resource that is an access point to an application. Application entry
+points are used to control users' access to different versions of an application that is deployed on a platform.
+
 Why main is static?
+A.
+Java main method is always static,so that compiler can call it without creating any object.
+The main method in Java must be  always declared static.If the static keyword missed,the Java program will
+compile but a runtime error will be thrown.
+
+
 Which class is the superclass of all classes?
+A.
+The object class is the superclass of all classes.
+
 What is difference between path and classpath variables?
+A.
+Path variable is used to set the path for all Java software tools like javac.exe, java.exe, javadoc.exe, and so on.
+classpath variable is used to set the path for java classes only.
+
 What is the difference between an Interface and Abstract class?
+A.
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
 what is Access Specifier?
 What is OOP ? Define each feature of java OOP.
