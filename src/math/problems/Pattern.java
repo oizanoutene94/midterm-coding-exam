@@ -8,7 +8,23 @@ public class Pattern {
 		 *
 		 *
 		 */
-		
+		int num = 100;
+		int count = 0;
+		while (num > 0) {
+			System.out.print(num + " , ");
+			count++;
+			if (count == 10) {
+				num -= 1;
+			} else if (count == 20 || count == 30 || count == 33) {
+				num -= 2;
+			} else if (count == 36 || count == 39 || count == 41) {
+				num -= 3;
+			} else if (count == 43 || count == 45) {
+				num -= 4;
+			} else if (count == 47) {
+				num -= 5;
+			}
+		}
 
 
 	}
