@@ -1,16 +1,19 @@
 package datastructure;
 
+import java.sql.*;
 import java.util.*;
 
 public class UseMap {
+
+	public UseMap() throws SQLException {
+	}
 
 	public static void main(String[] args) {
 		/*
 		 * Demonstrate how to use Map that includes storing and retrieving elements.
 		 * Add List<String> into a Map. Like, Map<String, List<string>> list = new HashMap<String, List<String>>();
 		 * Use For Each loop and while loop with Iterator to retrieve data.
-		 *
-		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
+		 * Use any databases to store data and retrieve data.
 		 */
 		// creating a new  map
 		Map<String, List<String>> map = new HashMap<String, List<String>>();
@@ -32,14 +35,27 @@ public class UseMap {
 		List<String> retrievedList = map.get("ls");
 		System.out.println(retrievedList);
 		// using a for each loop print each element from the retrievedList
-		for (String ls:retrievedList) {
-		System.out.println(ls);
-	}
+		for (String ls : retrievedList) {
+			System.out.println(ls);
+		}
 		//using a while loop with iterator print each element of the retrievedList
 		System.out.println("while loop with iterator :");
 		Iterator<String> iterator = retrievedList.iterator();
-		while (iterator.hasNext());
+		while (iterator.hasNext()) ;
 		System.out.println(iterator.next());
 	}
 
+	//connect to database
+
+	Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","abc1234");
+
 }
+
+
+
+
+
+
+
+
+

@@ -2,14 +2,22 @@ package datastructure;
 
 
 
+import com.mysql.cj.x.protobuf.MysqlxCrud;
+
 import java.sql.*;
 import java.util.ArrayList;
 
 
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 
+import static java.sql.DriverManager.getConnection;
+
 public class UseArrayList {
+
+	public UseArrayList() throws SQLException {
+	}
 
 	public static void main(String[] args) {
 		/*
@@ -54,7 +62,15 @@ public class UseArrayList {
 		System.out.println(number);
 	}
 	//sort the arraylist
+
+	// connect to the database
 }
+
+
+
+
+
+
 
 
 

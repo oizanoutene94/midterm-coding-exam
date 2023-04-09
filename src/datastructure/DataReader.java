@@ -1,8 +1,12 @@
 package datastructure;
 
+
+
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Stack;
 
@@ -23,57 +27,43 @@ public class DataReader {
 		 * Demonstrate how to use Stack that includes push,peek,search,pop elements.
 		 * Use For Each loop/while loop/Iterator to retrieve data.
 		 */
-
 		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
-		FileReader filereader = null;
-
-		BufferedReader bufferreader = null;
-
-		String line;
-
-		String store = "";
-
+		String store="";
+		FileReader fr= null;
 		try {
-
-// read file as specified in question using FileReader
-
-			filereader = new FileReader(textFile);
-
+			fr = new FileReader("C:\\Users\\ouelhadj\\eclipse-workspace\\midterm-coding-exam\\src\\data\\self-driving-car");
 		} catch (FileNotFoundException e) {
-
-// handle file not found
-
-			e.printStackTrace();
-
+			throw new RuntimeException(e);
 		}
 
+		BufferedReader br=new BufferedReader(fr);
+		String line=null;
+
 		try {
-
-// using buffer reader api
-
-			bufferreader = new BufferedReader(filereader);
-
-			while ((line = bufferreader.readLine()) != null) {
-
-// extract each line
-
-				store += line;
-
+			while((line=br.readLine())!=null){
+				store=store+line;
+				System.out.println(line);
 			}
 
-		} catch (Exception e) {
-
-// handle exception
-
-			System.out.println("Error unable to read");
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+		finally {
+			try {
+				fr.close();
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+			try {
+				br.close();
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
 
 		}
 
-// store each word from complete text in storeArray
-
 		String[] storeArray = store.split(" ");
-
-// empty stack and list
+		// create empty stack and list
 
 		Stack<String> stack = new Stack<String>();
 
@@ -88,38 +78,30 @@ public class DataReader {
 			list.add(element);
 
 			stack.push(element);
+			System.out.println(element);
 
 		}
 
 // retrieve FIFO order form linked list
 
 		System.out.println("LinkedList FIFO : ");
-
-		System.out.print (list.remove() + " ");
-
-		while (!list.isEmpty())
-
+		while (list.isEmpty()==false)
 			System.out.print (list.remove() + " ");
-
 		System.out.println();
 
 // since stack if LIFO
 
 		System.out.println("Stack FILO : ");
+		while (stack.isEmpty()==false) {
 
-		while (!stack.isEmpty()) {
-
-			System.out.print(stack.pop() + " ");
+			System.out.print(stack.pop() + " ");
 
 		}
-
-// formatted output
-
-		System.out.println();
 
 	}
 
 }
+
 
 
 
