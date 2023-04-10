@@ -18,7 +18,6 @@ public class FortuneEmployee {
     EmployeeInfo employeeInfo = new EmployeeInfo();
 
 	employeeInfo.calculateEmployeePension();
-	employeeInfo.calculateEmployeeBonus();
 
 	}
 

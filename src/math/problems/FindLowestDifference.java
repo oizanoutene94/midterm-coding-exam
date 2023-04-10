@@ -1,5 +1,7 @@
 package math.problems;
 
+import org.junit.Assert;
+
 public class FindLowestDifference {
     public static void main(String[] args) {
         /*
@@ -19,6 +21,12 @@ public class FindLowestDifference {
             }
         }
         System.out.println("The lowest difference between cells is " + lowestDifference);
+
+                    //---  unit testing--- //
+          //testdata = array1,array2
+
+        int expLowestDiffrence=1;
+        Assert.assertEquals(expLowestDiffrence,lowestDifference);
     }
 
         }

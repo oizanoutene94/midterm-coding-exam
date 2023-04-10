@@ -1,5 +1,8 @@
 package math.problems;
 
+import design.AbstractEmployee;
+import org.junit.Assert;
+
 public class MakePyramid {
     public static void main(String[] args) {
 
@@ -22,6 +25,13 @@ public class MakePyramid {
                 System.out.print("* ");
             }
             System.out.println();
+
+                    // ---unit testing---//
+
+            // test data: height=9;
+            int expectedr=5;
+            Assert.assertEquals(expectedr,rows);
+
         }
     }
 

@@ -19,7 +19,13 @@ public class Anagram {
             System.out.println("The strings " + str1 + " and " + str2 + " are anagrams.");
         } else {
             System.out.println("The strings " + str1 + " and " + str2 + " are not anagrams.");
+
+                       //---- unit testing----//
+            // data test = HEARTH/EARTH
+            boolean expectedresult=true;
+            Assert.assertEquals(expectedresult,isAnagram(str1,str2));
         }
+
     }
 
     public static boolean isAnagram(String str1, String str2) {

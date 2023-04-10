@@ -126,6 +126,10 @@ public class EmployeeInfo extends AbstractEmployee{
 	public void benefitLayout() {
 	}
 
+	@Override
+	public int calculateEmployeeBonus() {
+		return 0;
+	}
 
 
 	private static class DateConversion {

@@ -1,5 +1,7 @@
 package math.problems;
 
+import org.junit.Assert;
+
 public class FindMissingNumber {
 
     public static void main(String[] args) {
@@ -12,6 +14,12 @@ public class FindMissingNumber {
         int n = 10;
         int missingNumber = findMissingNumber(array, n);
         System.out.println("The missing number is " + missingNumber);
+              // ---unit testing--//
+
+        // test data:array={10, 2, 9, 4, 5, 3, 7, 8, 6}
+
+        int expectedMissingNumber=1;
+        Assert.assertEquals(expectedMissingNumber,missingNumber);
     }
        public static int findMissingNumber(int[] array, int n) {
         int expectedSum = n * (n + 1) / 2;

@@ -1,5 +1,7 @@
 package string.problems;
 
+import org.junit.Assert;
+
 public class Palindrome {
     public static void main(String[] args) {
         /*
@@ -16,6 +18,11 @@ public class Palindrome {
         System.out.println(s2 + " is palindrome --" + isPalindrome(s2));
         System.out.println(s3 + " is palindrome --" + isPalindrome(s3));
         System.out.println(s4 + " is palindrome --" + isPalindrome(s4));
+
+        //------ unit testing----//
+        //test data//
+        String expectedr="MOM";
+        Assert.assertEquals(expectedr, s1);
     }
     public static boolean isPalindrome(String s) {
         String reversed = new StringBuilder(s).reverse().toString();

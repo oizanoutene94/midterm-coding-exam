@@ -1,5 +1,10 @@
 package math.problems;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import static org.junit.Assert.assertEquals;
+
 public class Pattern {
 
 	public static void main(String[] args) {
@@ -8,24 +13,29 @@ public class Pattern {
 		 *
 		 *
 		 */
-		int num = 100;
-		int count = 0;
-		while (num > 0) {
-			System.out.print(num + " , ");
-			count++;
-			if (count == 10) {
-				num -= 1;
-			} else if (count == 20 || count == 30 || count == 33) {
-				num -= 2;
-			} else if (count == 36 || count == 39 || count == 41) {
-				num -= 3;
-			} else if (count == 43 || count == 45) {
-				num -= 4;
-			} else if (count == 47) {
-				num -= 5;
-			}
+
+	int n = 100;
+        while (n >= 0) {
+		System.out.print(n + " ");
+		if (n > 90) {
+			n--;
+		} else if (n > 70) {
+			n -= 2;
+		} else if (n > 40) {
+			n -= 3;
+		} else {
+			n -= 4;
+
+			//-----unit testing---/
+
 		}
 
 
+
+
+				}
+			}
 	}
-}
+
+
+

@@ -1,5 +1,7 @@
 package string.problems;
 
+import org.junit.Assert;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -34,6 +36,10 @@ public class DuplicateWord {
 
         double averageLength = totalLength / wordCount;
         System.out.println("Average word length: " + averageLength);
+              //----- unit testing---//
+        //test data = the average length of the string st
+        String expectedAvgLength= "4.647059";
+        Assert.assertEquals(expectedAvgLength,String.format("%4f",countDuplicateWords(st)));
     }
 
     public static Map<String, Integer> countDuplicateWords(String st) {
