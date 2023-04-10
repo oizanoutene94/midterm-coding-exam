@@ -9,6 +9,13 @@ public class Numbers {
 
 	/*
 	 * Show all the different kind of sorting algorithm by applying into (num array).
+ Bubble Sort
+Selection Sort
+Insertion Sort
+Merge Sort
+Quick Sort
+Heap Sort
+Radix Sort
 	 * Display the execution time for each sorting.Example in below.
 	 *
 	 * Use any databases[MongoDB, Oracle or MySql] to store data and retrieve data.
@@ -38,6 +45,14 @@ public class Numbers {
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
 
 		//By following above, Continue for rest of the Sorting Algorithm....
+		// Bubble Sort
+		long startTime = System.currentTimeMillis();
+		algo.bubbleSort(num);
+		long bubbleSortExecutionTime = System.currentTimeMillis() - startTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Bubble Sort take: " + bubbleSortExecutionTime + " milli sec");
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "bubble_sort", "SortingNumbers");
+		List<String> numbers1 = connectToSqlDB.readDataBase("bubble_sort", "SortingNumbers");
+		printValue(numbers);
 
 
 

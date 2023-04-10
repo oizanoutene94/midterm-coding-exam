@@ -42,7 +42,7 @@ public  abstract class AbstractEmployee implements Employee {
 
 
     public void setBenifits(int bnf) {
-        this.benifits = bnf;
+        //this.benifits = bnf;
     }
 
     public int getSalary() {
