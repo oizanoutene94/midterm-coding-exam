@@ -26,7 +26,7 @@ public class Pattern {
 		} else {
 			n -= 4;
 
-			//-----unit testing---/
+			//-----unit testing-------------------------------/
 
 		}
 

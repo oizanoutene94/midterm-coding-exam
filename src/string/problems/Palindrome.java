@@ -19,8 +19,8 @@ public class Palindrome {
         System.out.println(s3 + " is palindrome --" + isPalindrome(s3));
         System.out.println(s4 + " is palindrome --" + isPalindrome(s4));
 
-        //------ unit testing----//
-        //test data//
+        //-------------------- unit testing-----------------------//
+        //test data
         String expectedr="MOM";
         Assert.assertEquals(expectedr, s1);
     }

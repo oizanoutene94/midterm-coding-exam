@@ -25,10 +25,10 @@ public class MakePyramid {
                 System.out.print("* ");
             }
             System.out.println();
+            //----------------unit testing---------------------//
 
-                    // ---unit testing---//
+            // test data: height=9;---------------------------//
 
-            // test data: height=9;
             int expectedr=5;
             Assert.assertEquals(expectedr,rows);
 

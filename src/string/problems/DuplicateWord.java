@@ -36,7 +36,7 @@ public class DuplicateWord {
 
         double averageLength = totalLength / wordCount;
         System.out.println("Average word length: " + averageLength);
-              //----- unit testing---//
+        //----- ---------------unit testing-------------------------------------------//
         //test data = the average length of the string st
         String expectedAvgLength= "4.647059";
         Assert.assertEquals(expectedAvgLength,String.format("%4f",countDuplicateWords(st)));
@@ -55,7 +55,7 @@ public class DuplicateWord {
             wordCounts.put(word, count + 1);
         }
 
-        // Remove words with count 1
+        // Remove words with count 1---------------------------------------------
         Iterator<Map.Entry<String, Integer>> iterator = wordCounts.entrySet().iterator();
         while (iterator.hasNext()) {
             Map.Entry<String, Integer> entry = iterator.next();

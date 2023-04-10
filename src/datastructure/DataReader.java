@@ -69,11 +69,11 @@ public class DataReader {
 
 		LinkedList<String> list = new LinkedList<String>();
 
-// store each word to stack and list
+// store each word to stack and list----------------------------------------------------------------
 
 		for (String element : storeArray) {
 
-// as specified in question stack add, push to add element
+// as specified in question stack add, push to add element-------------------------------------------------
 
 			list.add(element);
 
@@ -82,14 +82,14 @@ public class DataReader {
 
 		}
 
-// retrieve FIFO order form linked list
+// retrieve FIFO order form linked list------------------------------------------------------------------
 
 		System.out.println("LinkedList FIFO : ");
 		while (list.isEmpty()==false)
 			System.out.print (list.remove() + " ");
 		System.out.println();
 
-// since stack if LIFO
+// since stack if LIFO---------------------------------------------------------------------------
 
 		System.out.println("Stack FILO : ");
 		while (stack.isEmpty()==false) {

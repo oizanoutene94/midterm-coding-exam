@@ -22,7 +22,7 @@ public class FindLowestDifference {
         }
         System.out.println("The lowest difference between cells is " + lowestDifference);
 
-                    //---  unit testing--- //
+        //----------------  unit testing----------------------------//
           //testdata = array1,array2
 
         int expLowestDiffrence=1;

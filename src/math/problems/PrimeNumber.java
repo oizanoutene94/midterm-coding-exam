@@ -26,7 +26,7 @@ public class PrimeNumber {
 		 * Out put number of Prime numbers on the given range.
 		 *
 		 *
-		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
+		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.-----------------------
 		 *
 		 */
 		int numberOfPrimes = 0;

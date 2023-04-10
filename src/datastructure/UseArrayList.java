@@ -27,7 +27,9 @@ public class UseArrayList {
 		 *
 		 */
 		ArrayList<Integer> numbers = new ArrayList<>();
-		// add the element to the arrayList
+
+		// add the element to the arrayList--------------------------------------------------------------
+
 		numbers.add(1);
 		numbers.add(2);
 		numbers.add(3);
@@ -39,7 +41,8 @@ public class UseArrayList {
 		int firstNumber = numbers.get(0);
 		System.out.println("First number: " + firstNumber);
 
-		//remove the second element
+		//remove the second element---------------------------------------------------------------
+
 		numbers.remove(1);
 		System.out.println(numbers);
 		//retrieve element using the for loop
@@ -49,13 +52,15 @@ public class UseArrayList {
 		}
 		System.out.println();
 
-		//Print all the elements in the ArrayList using a for-each loop
+		//Print all the elements in the ArrayList using a for-each loop---------------------------------
+
 		for (int n : numbers) {
 			System.out.println(n);
 		}
 
-		// Print all the elements in the ArrayList using a while loop and an iterator
+		// Print all the elements in the ArrayList using a while loop and an iterator------------------------
 		//System.out.println("while with iterator");
+
 		Iterator<Integer> iterator = numbers.listIterator();
 		while (iterator.hasNext()) ;
 		int number = iterator.next();

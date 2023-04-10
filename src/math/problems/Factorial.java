@@ -16,14 +16,13 @@ public class Factorial {
         int result = factorial1(5);
         System.out.println("Factorial of 5 is " + result);
 
-
-                          //--- unit testing---//
-        // TestData=8;
+        //---------------- unit testing---------------------------------//
+        // ----TestData=8;----//
          int expectedresult =960;
        Assert.assertEquals(expectedresult,result);
     }
 
-    //using recurssion
+    //-------------------------using recurssion-------------------------//
 
      /*public static int factorial(int n) {
        if (n == 0) {
@@ -32,7 +31,7 @@ public class Factorial {
            return n * factorial(n - 1);*/
 
 
-    //using iteration
+    //-----------------------------------using iteration------------------------------//
         public static int factorial1 ( int n){
             int result = 1;
             for (int i = 1; i <= n; i++) {
